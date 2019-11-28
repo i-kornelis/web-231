@@ -8,14 +8,19 @@
 ;===========================================
 */
 
-var x = 10;
+//program start
+
+//variable declaration
+var x == 10;
 
 //creating function
 function multiply(num) {
     var product = 0;
-    product = num*num;
+    num*num = product;
     return product;
 };
 
+//output
 console.log(multiply(x));
 
+//end program
