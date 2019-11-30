@@ -10,6 +10,6 @@
 
 //start program
 
-console.log ("Hello World, My Name is Izabella Kornelis.")
+console.log ("Hello World, My Name is Izabella Kornelis.");
 
 //end program
