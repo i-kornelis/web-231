@@ -4,7 +4,7 @@
 ; Author: Izabella Kornelis
 ; Date: 29 November 2019
 ; Modified By: Izabella Kornelis
-; Description: A simple JavaScript program to introduce to work with creating multiple variables for 3 employee records.
+; Description: A simple JavaScript program to introduce how to work with creating multiple variables.
 ;===========================================
 */
 
