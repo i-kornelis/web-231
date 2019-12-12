@@ -49,7 +49,7 @@ function randomNumber() {
 // Output
 console.log("-- DO THE NUMBERS MATCH GAME --")
 
-//for loop
+// for loop
 for (let i = 0; i < 10; i++) {
   var number2 = randomNumber()
   if (match(number1, number2)) {

@@ -25,7 +25,6 @@ var testVar4= "Bike";
 var testVar5= "Four";
 var testVar6= "Three";
 
-
 // function
 function match(arg1, arg2) {
   if (arg1 === arg2)
