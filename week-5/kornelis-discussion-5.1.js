@@ -2,7 +2,7 @@
 ============================================
 ; Title: Discussion 5.1
 ; Author: Izabella Kornelis
-; Date: 11 December 2019
+; Date: 07 January 2020
 ; Description: A broken JavaScript program using a keyed collection array with at least two (2) errors.
 ;===========================================
 */
