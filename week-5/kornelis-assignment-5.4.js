@@ -3,7 +3,7 @@
 ; Title: Assignment 5.4
 ; Author: Izabella Kornelis
 ; Date: 07 January 2020
-; Description: A broken JavaScript program to filter/reduce complex data structures.
+; Description: A JavaScript program to filter/reduce complex data structures.
 ;===========================================
 */
 
