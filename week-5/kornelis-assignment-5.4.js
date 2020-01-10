@@ -52,14 +52,16 @@ var composers = [
 ];
 
 
-
-// return a new list of objects with only the rating field
-let byRating = composers.map((x) => {
-  return {lastName: x.lastName, rating: x.rating}
+// output Composer by Rating
+console.log("-- COMPOSER BY RATING --");
+composers.forEach((byRatings) => {
+  console.log(`Rating: ${byRatings.rating} \nComposer: ${byRatings.lastName} \n`);
 });
 
-// output
-console.log('-- COMPOSER BY RATING --')
-byRatings.forEach((x) => {
-  console.log("Rating:  + x.rating})
-})
+// output Composer by Genre
+console.log("  -- COMPOSER BY GENRE --")
+composers.forEach((byGenres) => {
+  console.log(`Genre: ${byGenres.rating} \nComposer: ${byGenres.lastName} \n`);
+});
+
+// end program
