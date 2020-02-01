@@ -1,0 +1,110 @@
+<!--
+============================================
+; Title: Exercise 8.3
+; Author: Izabella Kornelis
+; Date: 1 February 2020
+; Description: HTML using JQuery to produce dynamic HTML.
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style type="text/css">
+    body {
+    margin-left: 20px;
+    }
+    #top-bar {
+      height: 20px;
+      margin-bottom: 20px;
+      margin-left: -20px;
+      background-color: grey;
+    }
+    h1{
+      font-family: Roboto, san-serif;
+      font-weight: 500;
+    }
+    p{
+      font-family: Roboto, san-serif;
+      font-weight: 300;
+    }
+    button{
+      font-family: Roboto, san-serif;
+      font-weight: 400;
+    }
+    table{
+      font-family: Roboto, san-serif;
+      font-weight: 300;
+      border-collapse: collapse;
+    }
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+    }
+    th{
+      background-color: steelblue;
+      color: white;
+      font-weight: 400;
+    }
+    tr:nth-child(even) {
+    background-color: lightsteelblue;
+    }
+  </style>
+</head>
+<body>
+  <div id = "top-bar"></div>
+
+  <h1>Exercise 8.3</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id blandit purus. Aenean et augue iaculis, dictum mauris eget, sagittis mi. Donec justo dolor, finibus eget consectetur et, interdum ac neque. Nullam id sem turpis. Duis at turpis quis sem interdum posuere. Morbi eros ante, dictum at nunc et, tempor consectetur dui. Etiam porttitor sapien finibus facilisis pretium. Quisque cursus risus nec ex consequat, cursus euismod quam viverra. Aliquam dapibus sapien sit amet tellus rhoncus, et iaculis urna mattis. Duis ornare dignissim nisi, vel feugiat lacus consectetur non. Quisque id ullamcorper nibh.</p>
+  <button>Toggle</button>
+
+  <br><br />
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">1</a></td>
+      <td>Apple</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">2</a></td>
+      <td>Orange</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">3</a></td>
+      <td>Banana</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">4</a></td>
+      <td>Pear</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">5</a></td>
+      <td>Kiwi</td>
+    </tr>
+  </table>
+
+  <script>
+    // Show/Hide Paragraph text
+    $("button").click(function(){
+      $("p").toggle();
+    });
+
+    $(".fruitId").click(function (event){
+      event.preventDefault();
+      var fruitId = $(this).text();
+      var fruitType = $(this).closest("td").next().text();
+      alert("ID: " + fruitId + ", Type: " + fruitType);
+    });
+
+  </script>
+
+</body>
+</html>
