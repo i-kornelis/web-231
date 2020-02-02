@@ -1,0 +1,50 @@
+<!--
+============================================
+; Title:  8.1
+; Author: Clayton Stacy
+; Date:   27 January 2020
+; Modified by: Izabella Kornelis
+; Description: DOM Manipulation Discussion
+;===========================================
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Stacy Discussion 8.1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Create a nav bar with a Login link which will toggle the log in form on and off. -->
+  <nav>
+    <div class='container'>
+        <span class='login'>Login</span>
+      </div>
+  </nav>
+
+  <!-- The login form should be toggled when the  -->
+  <div class='login-form'>
+    <div class='container'>
+      <form>
+        <h4>Username</h4>
+        <input class='username' />
+        <h4>Password</h4>
+        <input type='password' />
+        <input type='submit' value='Sign In' />
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    //Create a jquery function which will toggle the login form on and off when the log in link is clicked.
+    $('.login').click (function() {
+     $('.login-form').toggle();
+});
+</script>
+
+
+</body>
+</html>
