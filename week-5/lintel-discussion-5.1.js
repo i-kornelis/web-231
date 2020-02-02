@@ -47,4 +47,4 @@ const instrumentArray = [
 console.log("***Instrument List***");
 instrumentArray.forEach((instrument) => {
   console.log(`${instrument.name} - Skill Level: ${instrument.skillLevel}`);
-})
+});
